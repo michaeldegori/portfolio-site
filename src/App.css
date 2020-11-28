@@ -101,7 +101,107 @@ input, select {
     vertical-align:middle;
 }
 
-/* 
-MY CODE 
-*/
+/* MY CODE */
 
+* {
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+header {
+  border: solid 1px red;
+  width: 100%;
+  height: 50px;
+  background-color: #111;
+  /* position: fixed; */
+}
+
+header .header-brand {
+  font-family: 'Nunito', sans-serif;
+  font-size: 28px;
+  font-weight: 800;
+  color: #fff;
+  display: block;
+  margin: 0 auto;
+  text-align: left;
+  padding: 11px 0 11px 11px;
+}
+
+header nav ul {
+  display: none;
+  margin: 0 auto;
+  width: fit-content;
+}
+
+header nav ul li {
+
+}
+
+header nav ul li Link {
+
+}
+
+.menu-btn {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50px;
+  height: 50px;
+  background-color: #111;
+  cursor: pointer;
+  transition: all .5s ease-in-out;
+  border: 2px solid red;
+}
+
+.menu-btn-burger {
+  width: 35px;
+  height: 4.5px;
+  background-color: #fff;
+  border-radius: 5px;
+  /* box-shadow: 0 2px 5px #ebd27620; */
+  transition: all .5s ease-in-out;
+}
+
+.menu-btn-burger::before,
+.menu-btn-burger::after {
+  content: '';
+  position: absolute;
+  height: 4.5px;
+  background-color: #fff;
+  border-radius: 5px;
+  /* box-shadow: 0 2px 5px #ebd27620; */
+  transition: all .5s ease-in-out;
+}
+
+.menu-btn-burger::before {
+  width: 23px;
+  transform: translateY(-10px) translateX(12px);
+}
+
+.menu-btn-burger::after {
+  width: 35px;
+  transform: translateY(10px);
+}
+
+footer {
+  height: 75px;
+  background-color: #111;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+footer h4 {
+  color: white;
+}
+
+footer img {
+  width: 35px
+}
+
+.footer-icon-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
