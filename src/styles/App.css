@@ -166,7 +166,7 @@ header .header-brand {
   height: 0;
   width: 100vw;
   margin-bottom: 50px;
-  background: linear-gradient( rgba(0,0,0,1) 0%, rgba(0,0,0,0.6) 85%, rgba(0,0,0,0.3) 90%, rgba(0,0,0,0) 100%);
+  background: linear-gradient( rgba(0,0,0,1) 0%, rgba(0,0,0,0.6) 85%, rgba(0,0,0,0.4) 90%, rgba(0,0,0,0.2) 95%, rgba(0,0,0,0) 100%);
   transition: all .5s ease-in-out;
 }
 
