@@ -1,5 +1,5 @@
 import './App.css';
-import React, { useState, Component } from 'react';
+import React, { useState, useRef } from 'react';
 import Home from './components/Home';
 import Portfolio from './components/Portfolio';
 import About from './components/About';
@@ -13,34 +13,45 @@ import skillsGlyph from './images/skills-glyph.png'
 
 function App() {
 
-  const menuBtn = document.querySelector('.menu-btn');
   const [menuOpen, setMenuOpen] = useState(false);
-  if (!menuOpen) {
-    menuBtn.classList.add('open');
-  } else {
-    menuBtn.classList.remove('open')
+  const menuBtnRef = useRef()
+  const navLinksRef = useRef()
+  const menuBackgroundRef = useRef()
+  
+  const openCloseMenu = () => {
+    if(!menuOpen) {
+      menuBtnRef.current.classList.add('open');
+      navLinksRef.current.classList.add('open');
+      menuBackgroundRef.current.classList.add('open');
+      setMenuOpen(true);
+    } else {
+      menuBtnRef.current.classList.remove('open');
+      navLinksRef.current.classList.remove('open');
+      menuBackgroundRef.current.classList.remove('open');
+      setMenuOpen(false);
+    }
   }
-  console.log(menuOpen)
 
   return (
     <div className="App">
       <header>
         <Link to="/" className="header-brand">.michael(degori)</Link>
 
-        <nav>
-          <ul>
-            <li><Link to="/portfolio">.portfolio</Link></li>
-            <li><Link to="/about">.about</Link></li>
-            <li><Link to="/skills">.skills</Link></li>
-            <li><Link to="/contact">.contact</Link></li>
-          </ul>
-          <Link to="/resume">RESUME</Link>
-        </nav>
-
-        <div className="menu-btn" onClick={() => setMenuOpen(!menuOpen)}>
+        <div className="menu-btn" ref={menuBtnRef} onClick={openCloseMenu}>
           <div className="menu-btn-burger"></div>
         </div>
 
+        <div className="menu-background" ref={menuBackgroundRef}>
+          <nav>
+            <ul className="nav-links" ref={navLinksRef}>
+              <li><Link to="/portfolio" id="portfolio-link">.portfolio</Link></li>
+              <li><Link to="/about" id="about-link">.about</Link></li>
+              <li><Link to="/skills" id="skills-link">.skills</Link></li>
+              <li><Link to="/contact" id="contact-link">.contact</Link></li>
+              <li><Link to="/resume" id="resume-link">RESUME</Link></li>
+            </ul>
+          </nav>
+        </div> 
       </header>
 
       <Switch>
