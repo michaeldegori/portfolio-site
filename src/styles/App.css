@@ -118,7 +118,7 @@ header {
 
 header .header-brand {
   font-family: 'Nunito', sans-serif;
-  font-size: 28px;
+  font-size: 1.8rem;
   font-weight: 800;
   color: #fff;
   display: inline-block;
@@ -246,12 +246,13 @@ footer {
 }
 
 footer h4 {
+  font-size: .95rem;
   font-weight: 500;
   color: white;
 }
 
 footer img {
-  width: 35px;
+  width: 30px;
   padding-bottom: 5px;
 }
 
