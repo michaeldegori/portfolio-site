@@ -234,7 +234,7 @@ footer {
   height: 75px;
   background-color: #1159c0;
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-around;
   align-items: center;
 }
 
