@@ -1,11 +1,28 @@
-.home-title {
-  margin: 20px;
+#home-title {
+  display: flex;
+  justify-content: center;
+}
+#home-title-container {
+  height: calc(50vh - 50px);
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
-.home-title-container {
-  margin-top: 200px;
+#home-title h1 {
+  font-family: 'Nunito', sans-serif;
+  font-weight: 700;
+  color: white;
+  font-size: 3.3rem;
+  line-height: 3.7rem;
 }
 
-.home-title h1 {
-  font-size: 60px;
+#home-title h3 {
+  font-family: 'Nunito', sans-serif;
+  font-weight: 500;
+  display: inline-block;
+  color: #FFDE0A;
+  margin-top: .75rem;
+  font-size: 1.2rem;
+  line-height: 1.8rem;
 }

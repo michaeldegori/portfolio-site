@@ -48,11 +48,11 @@ function App() {
       <section className="menu-background" ref={menuBackgroundRef}>
         <nav>
           <ul className="nav-links-ul" ref={navLinksRef}>
-  <li><Link to="/portfolio" id="portfolio-link" className="nav-links">class Portfolio</Link></li>
-            <li><Link to="/about" id="about-link" className="nav-links">class About</Link></li>
-            <li><Link to="/skills" id="skills-link" className="nav-links">class Skills</Link></li>
-            <li><Link to="/contact" id="contact-link" className="nav-links">class Contact</Link></li>
-            <li><Link to="/resume" id="resume-link" className="nav-links">RESUME</Link></li>
+  <li><Link to="/portfolio" id="portfolio-link" className="nav-links">.portfolio</Link></li>
+            <li><Link to="/about" id="about-link" className="nav-links">.about</Link></li>
+            <li><Link to="/skills" id="skills-link" className="nav-links">.skills</Link></li>
+            <li><Link to="/contact" id="contact-link" className="nav-links">.contact</Link></li>
+            <li><Link to="/resume" id="resume-link" className="nav-links">#resume</Link></li>
           </ul>
         </nav>
       </section>

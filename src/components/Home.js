@@ -15,7 +15,7 @@ const Home = (props) => {
         <section id="home-title">
           <div id="home-title-container">
             <h1>I create incredible experiences</h1>
-            <h3>Web Developer from MIA with speacialties in front && back-end development, functionality and SEO</h3>
+            <h3>Web Developer from MIA</h3>
           </div>
 
         </section>

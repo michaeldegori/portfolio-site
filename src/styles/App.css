@@ -108,11 +108,20 @@ input, select {
   box-sizing: border-box;
 }
 
+html {
+  height: 100%;
+  width: 100vw;
+  background: linear-gradient( rgba(0, 0, 0, .65), rgba(0, 0, 0, 1) ), url('../images/background.jpg');
+  background-repeat: no-repeat;
+  background-position: 58%;
+  background-size: cover;
+}
+
 header {
   width: 100%;
   height: 50px;
-  background-color: #111;
-  margin-top: -50px;
+  /* background-color: #111; */
+  opacity: 1;
   position: fixed;
 }
 
@@ -128,15 +137,10 @@ header .header-brand {
   transition: all .5s ease-in-out;
 }
 
-header .header-brand.open {
-  color: #FFDE0A;
-}
-
 .menu-background .nav-links-ul {
   font-family: 'Nunito', sans-serif;
   font-size: 20px;
-  font-weight: 700;
-  margin-top: 50px;
+  font-weight: 800;
   height: 0;
   width: 100vw;
   transform: translateY(-275px);
@@ -154,23 +158,20 @@ header .header-brand.open {
 .menu-background .nav-links-ul.open {
   font-size: 20px;
   height: 200px;
-  transform: translateY(0px);
+  transform: translateY(85px);
   transition: all .5s ease-in-out;
-}
-
-#resume-link {
-  margin-top: 20px;
 }
 
 .menu-background {
   height: 0;
   width: 100vw;
-  background-color: rgb(90, 90, 90);
+  margin-bottom: 50px;
+  background: linear-gradient( rgba(0,0,0,1) 0%, rgba(0,0,0,0.6) 85%, rgba(0,0,0,0.3) 90%, rgba(0,0,0,0) 100%);
   transition: all .5s ease-in-out;
 }
 
 .menu-background.open {
-  height: 200px;
+  height: 300px;
   transition: all .5s ease-in-out;
 }
 
@@ -217,19 +218,16 @@ header .header-brand.open {
 /* BURGER MENU ANIMATION */
 
 .menu-btn.open .menu-btn-burger {
-  background-color: #FFDE0A;
   transform: translateX(35px);
   background: transparent;
 }
 
 .menu-btn.open .menu-btn-burger::before {
-  background-color: #FFDE0A;
   width: 35px;
   transform: rotate(45deg) translate(-24px, 24px)
 }
 
 .menu-btn.open .menu-btn-burger::after {
-  background-color: #FFDE0A;
   transform: rotate(-45deg) translate(-24px, -24px)
 }
 
@@ -263,10 +261,6 @@ footer img {
   display: flex;
   align-items: center;
   justify-content: center;
-}
-
-.footer-icon-container:active {
-  background-color: #FFDE0A;
 }
 
 .footer-icon-container a {
