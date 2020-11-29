@@ -104,8 +104,8 @@ input, select {
 /* MY CODE */
 
 * {
-    text-decoration: none;
-    box-sizing: border-box;
+  text-decoration: none;
+  box-sizing: border-box;
 }
 
 #root {
@@ -133,15 +133,21 @@ header .header-brand {
   padding: 11px 0 11px 11px;
 }
 
-header .nav-links {
+header .nav-links-ul {
   font-family: 'Nunito', sans-serif;
   font-size: 18px;
   font-weight: 700;
+  color: white;
+  padding-top: 60px;
   transform: translateX(100vw);
   transition: all .5s ease-in-out;
 }
 
-header .nav-links.open {
+header .nav-links {
+  color: white;
+}
+
+header .nav-links-ul.open {
   transform: translateX(40vw);
   transition: all .5s ease-in-out;
 }
