@@ -1,4 +1,4 @@
-import './App.css';
+import './styles/App.css';
 import React, { useState, useRef } from 'react';
 import Home from './components/Home';
 import Portfolio from './components/Portfolio';
@@ -40,19 +40,19 @@ function App() {
         <div className="menu-btn" ref={menuBtnRef} onClick={openCloseMenu}>
           <div className="menu-btn-burger"></div>
         </div>
-
-        <div className="menu-background" ref={menuBackgroundRef}>
-          <nav>
-            <ul className="nav-links-ul" ref={navLinksRef}>
-              <li><Link to="/portfolio" id="portfolio-link" className="nav-links">class Portfolio</Link></li>
-              <li><Link to="/about" id="about-link" className="nav-links">class About</Link></li>
-              <li><Link to="/skills" id="skills-link" className="nav-links">class Skills</Link></li>
-              <li><Link to="/contact" id="contact-link" className="nav-links">class Contact</Link></li>
-              <li><Link to="/resume" id="resume-link" className="nav-links">RESUME</Link></li>
-            </ul>
-          </nav>
-        </div> 
       </header>
+
+      <section className="menu-background" ref={menuBackgroundRef}>
+        <nav>
+          <ul className="nav-links-ul" ref={navLinksRef}>
+  <li><Link to="/portfolio" id="portfolio-link" className="nav-links">class Portfolio</Link></li>
+            <li><Link to="/about" id="about-link" className="nav-links">class About</Link></li>
+            <li><Link to="/skills" id="skills-link" className="nav-links">class Skills</Link></li>
+            <li><Link to="/contact" id="contact-link" className="nav-links">class Contact</Link></li>
+            <li><Link to="/resume" id="resume-link" className="nav-links">RESUME</Link></li>
+          </ul>
+        </nav>
+      </section>
 
       <Switch>
         <Route exact path="/" render={(props) => <Home {...props} />} />

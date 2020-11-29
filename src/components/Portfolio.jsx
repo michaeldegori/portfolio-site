@@ -1,3 +1,4 @@
+import '../styles/Porfolio.css'
 import React from 'react';
 
 const Portfolio = () => {
