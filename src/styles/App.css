@@ -231,7 +231,11 @@ header nav ul li Link {
 }
 
 footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
   height: 75px;
+  width: 100%;
   background-color: #1159c0;
   display: flex;
   justify-content: space-around;
