@@ -252,6 +252,14 @@ footer img {
   padding-bottom: 5px;
 }
 
+.footer-icon-container {
+  width: 25vw;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 .footer-icon-container a {
   display: flex;
   flex-direction: column;
