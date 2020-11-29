@@ -1,8 +1,8 @@
 import '../styles/Home.css'
 import React from 'react';
-import Portfolio from './Portfolio';
-import About from './About';
-import Contact from './Contact';
+import Portfolio from './Portfolio.js';
+import About from './About.js';
+import Contact from './Contact.js';
 import { Link, Switch, Route } from 'react-router-dom';
 
 

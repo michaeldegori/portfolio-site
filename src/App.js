@@ -1,10 +1,10 @@
 import './styles/App.css';
 import React, { useState, useRef } from 'react';
-import Home from './components/Home';
-import Portfolio from './components/Portfolio';
-import About from './components/About';
-import Skills from './components/Skills'
-import Contact from './components/Contact';
+import Home from './components/Home.js';
+import Portfolio from './components/Portfolio.js';
+import About from './components/About.js';
+import Skills from './components/Skills.js'
+import Contact from './components/Contact.js';
 import { Link, Switch, Route } from 'react-router-dom';
 import aboutGlyph from './images/about-glyph.png'
 import portfolioGlyph from './images/projects-glyph.png'
@@ -17,17 +17,20 @@ function App() {
   const menuBtnRef = useRef()
   const navLinksRef = useRef()
   const menuBackgroundRef = useRef()
+  const headerBrandRef = useRef()
   
   const openCloseMenu = () => {
     if(!menuOpen) {
       menuBtnRef.current.classList.add('open');
       navLinksRef.current.classList.add('open');
       menuBackgroundRef.current.classList.add('open');
+      headerBrandRef.current.classList.add('open');
       setMenuOpen(true);
     } else {
       menuBtnRef.current.classList.remove('open');
       navLinksRef.current.classList.remove('open');
       menuBackgroundRef.current.classList.remove('open');
+      headerBrandRef.current.classList.remove('open');
       setMenuOpen(false);
     }
   }
@@ -35,7 +38,7 @@ function App() {
   return (
     <div className="App">
       <header>
-        <Link to="/" className="header-brand">.michael(degori)</Link>
+        <Link to="/" className="header-brand" ref={headerBrandRef}>.michael(degori)</Link>
 
         <div className="menu-btn" ref={menuBtnRef} onClick={openCloseMenu}>
           <div className="menu-btn-burger"></div>
