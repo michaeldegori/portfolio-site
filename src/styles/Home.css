@@ -1,7 +1,7 @@
 #home-title {
   height: calc(50vh - 6rem);
   width: 80%;
-  margin: 3.75rem 10% 1.5rem;
+  margin: 3.75rem 10% 0;
   display:flex;
   flex-direction: column;
   justify-content: center;
@@ -36,6 +36,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin-top: 1rem;
   margin-bottom: 5rem;
   height: calc(50vh - 5rem);
 }
