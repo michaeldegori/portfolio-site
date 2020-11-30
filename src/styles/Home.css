@@ -1,7 +1,7 @@
 #home-title {
   height: calc(50vh - 6rem);
-  width: 78vw;
-  margin: 3.75rem auto 0 auto;
+  width: 80%;
+  margin: 3.75rem 10% 0 auto;
   display:flex;
   flex-direction: column;
   justify-content: center;
@@ -37,9 +37,7 @@
   flex-direction: column;
   align-items: center;
   margin-bottom: 5rem;
-  position: fixed;
   height: calc(50vh - 5rem);
-  bottom: 0px;
 }
 
 #home-port-title-container {
@@ -75,8 +73,8 @@
 }
 
 #home-carousel-container article {
-  height: calc(50vh - 10rem);
-  width: calc((50vh - 10rem) * .8);
+  height: 16rem;
+  width: 12rem;
   border-radius: 15px;
   display: inline-block;
 }
