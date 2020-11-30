@@ -1,7 +1,7 @@
 #home-title {
   height: calc(50vh - 6rem);
   width: 80%;
-  margin: 3.75rem 10% 0 auto;
+  margin: 3.75rem 10% 1.5rem;
   display:flex;
   flex-direction: column;
   justify-content: center;
