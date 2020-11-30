@@ -46,7 +46,7 @@ function App() {
   return (
     <div className="App">
       <header>
-        <Link to="/" className="header-brand" ref={headerBrandRef} onClick={openCloseMenu}>.michael(degori)</Link>
+        <Link to="/" className="header-brand" ref={headerBrandRef}>.michael(degori)</Link>
 
         <div className="menu-btn" ref={menuBtnRef} onClick={openCloseMenu}>
           <div className="menu-btn-burger"></div>

@@ -1,5 +1,6 @@
 import '../styles/Home.css'
 import React from 'react';
+import { Link } from 'react-router-dom'
 import dinoStill from '../images/dino-game-still.png'
 import rockStill from '../images/rock-site-still.png'
 import defaultStill from '../images/project-default.jpeg'
@@ -22,7 +23,7 @@ const Home = (props) => {
           <div id="home-portfolio-container">
             <div id="home-port-title-container">
               <h2>My Work</h2>
-              <h2>- View All Work</h2>
+              <h2 id="view-work"><Link to='/portfolio'>- View All Work</Link></h2>
             </div>
             <div id="home-carousel-container">
               <article id="dino-still" className="home-projects">
