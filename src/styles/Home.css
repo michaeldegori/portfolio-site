@@ -1,6 +1,6 @@
 #home-title {
-  height: calc(50vh - 3.75rem);
-  width: 18.2rem;
+  height: calc(50vh - 6rem);
+  width: 78vw;
   margin: 0 auto;
   display:flex;
   flex-direction: column;
@@ -11,8 +11,8 @@
   font-family: 'Nunito', sans-serif;
   font-weight: 700;
   color: white;
-  font-size: 3.3rem;
-  line-height: 3.7rem;
+  font-size: 13vmin;
+  line-height: 15vmin;
 }
 
 #home-title h3 {
@@ -28,6 +28,7 @@
 #home-portfolio {
   display: flex;
   justify-content: center;
+  align-items: center;
 }
 
 #home-portfolio-container {
@@ -58,11 +59,15 @@
 }
 
 #home-carousel-container {
-  height: calc(50vh - 80px);
+  height: 40vh;
   width: 100%;
   padding: 1.3rem 0 2rem;
   overflow-x: auto;
   white-space: nowrap;
+}
+
+#home-carousel-container::-webkit-scrollbar {
+  display: none;
 }
 
 #home-carousel-container article {
