@@ -26,15 +26,15 @@ const Home = (props) => {
               <h2 id="view-work"><Link to='/portfolio'>- View All Work</Link></h2>
             </div>
             <div id="home-carousel-container">
-              <article id="dino-still" className="home-projects">
-                <a href=""></a>
-              </article>
-              <article id="rock-still" className="home-projects">
-                <a href=""></a>
-              </article>
-              <article id="default-still" className="home-projects">
-                <a href=""></a>
-              </article>
+              <a href="https://the-ironhack-breakfast-club.github.io/dino-game/">
+                <article id="dino-still" className="home-projects"></article>
+              </a>
+              <a href="https://www.toningwithteremanatequila.netlify.app/">
+                <article id="rock-still" className="home-projects"></article>
+              </a>
+              <a href="#">
+                <article id="default-still" className="home-projects"></article>
+              </a>
             </div>
           </div>
         </section>
