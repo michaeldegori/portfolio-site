@@ -5,7 +5,7 @@ import Portfolio from './components/Portfolio.js';
 import About from './components/About.js';
 import Skills from './components/Skills.js'
 import Contact from './components/Contact.js';
-import { Link, Switch, Route } from 'react-router-dom';
+import { NavLink, Link, Switch, Route } from 'react-router-dom';
 import aboutGlyph from './images/about-glyph.png'
 import portfolioGlyph from './images/projects-glyph.png'
 import contactGlyph from './images/contact-glyph.png'
@@ -18,6 +18,11 @@ function App() {
   const navLinksRef = useRef()
   const menuBackgroundRef = useRef()
   const headerBrandRef = useRef()
+  const portfolioRef = useRef()
+  const aboutRef = useRef()
+  const skillsRef = useRef()
+  const contactRef = useRef()
+  const resumeRef = useRef()
   
   const openCloseMenu = () => {
     if(!menuOpen) {
@@ -48,11 +53,11 @@ function App() {
       <section className="menu-background" ref={menuBackgroundRef}>
         <nav>
           <ul className="nav-links-ul" ref={navLinksRef}>
-  <li><Link to="/portfolio" id="portfolio-link" className="nav-links">.portfolio</Link></li>
-            <li><Link to="/about" id="about-link" className="nav-links">.about</Link></li>
-            <li><Link to="/skills" id="skills-link" className="nav-links">.skills</Link></li>
-            <li><Link to="/contact" id="contact-link" className="nav-links">.contact</Link></li>
-            <li><Link to="/resume" id="resume-link" className="nav-links">#resume</Link></li>
+            <li><NavLink to="/portfolio" id="portfolio-link" className="nav-links" ref={portfolioRef} activeClassName="highlight">#portfolio</NavLink></li>
+            <li><NavLink to="/about" id="about-link" className="nav-links" ref={aboutRef} activeClassName="highlight">#about</NavLink></li>
+            <li><NavLink to="/skills" id="skills-link" className="nav-links" ref={skillsRef} activeClassName="highlight">#skills</NavLink></li>
+            <li><NavLink to="/contact" id="contact-link" className="nav-links" ref={contactRef} activeClassName="highlight">#contact</NavLink></li>
+            <li><Link to="/resume" id="resume-link" className="nav-links" ref={resumeRef}>#resume</Link></li>
           </ul>
         </nav>
       </section>
