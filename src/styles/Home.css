@@ -1,7 +1,7 @@
 #home-title {
   height: calc(50vh - 6rem);
   width: 78vw;
-  margin: 0 auto;
+  margin: 3.75rem auto 0 auto;
   display:flex;
   flex-direction: column;
   justify-content: center;
@@ -36,10 +36,14 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin-bottom: 5rem;
+  position: fixed;
+  height: calc(50vh - 5rem);
+  bottom: 0px;
 }
 
 #home-port-title-container {
-  width: 18.2rem;
+  width: 80%;
   display: flex;
   justify-content: space-between;
 }
@@ -61,7 +65,7 @@
 #home-carousel-container {
   height: 40vh;
   width: 100%;
-  padding: 1.3rem 0 2rem;
+  padding-top: 1.3rem;
   overflow-x: auto;
   white-space: nowrap;
 }
@@ -71,8 +75,8 @@
 }
 
 #home-carousel-container article {
-  height: calc(50vh - 9rem);
-  width: 55vw;
+  height: calc(50vh - 10rem);
+  width: calc((50vh - 10rem) * .8);
   border-radius: 15px;
   display: inline-block;
 }
@@ -86,8 +90,8 @@
   background-image: url('../images/dino-game-still.png');
   background-repeat: no-repeat;
   background-size: 250%;
-  background-position: -180px -130px;
-  margin-left: 2.5rem;
+  background-position: 60% 50%;
+  margin-left: 10%;
   margin-right: 2rem;
 }
 
