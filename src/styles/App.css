@@ -124,7 +124,7 @@ header {
   /* background-color: #111; */
   opacity: 1;
   position: fixed;
-  z-index: 2;
+  z-index: 3;
 }
 
 header .header-brand {
@@ -154,7 +154,7 @@ header .header-brand {
 
 .dark-background.open {
   visibility: visible;
-  opacity: .7;
+  opacity: .4;
 }
 
 .menu-background .nav-links-ul {
@@ -182,6 +182,10 @@ header .header-brand {
   justify-content: flex-end;
 }
 
+.highlight#home-link {
+  border-right: 3px solid #FFDE0A;
+}
+
 .highlight#portfolio-link {
   border-right: 3px solid #FFDE0A;
 }
@@ -204,6 +208,7 @@ header .header-brand {
   margin-bottom: 50px;
   background: linear-gradient( rgba(0,0,0,1) 0%, rgba(0,0,0,0.6) 85%, rgba(0,0,0,0.4) 90%, rgba(0,0,0,0.2) 95%, rgba(0,0,0,0) 100%);
   transition: all .5s ease-in-out;
+  position: relative;
   z-index: 2;
 }
 

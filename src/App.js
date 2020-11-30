@@ -24,6 +24,7 @@ function App() {
   const contactRef = useRef()
   const resumeRef = useRef()
   const darkBackgroundRef= useRef()
+  const homeRef = useRef()
   
   const openCloseMenu = () => {
     if(!menuOpen) {
@@ -32,6 +33,7 @@ function App() {
       menuBackgroundRef.current.classList.add('open');
       headerBrandRef.current.classList.add('open');
       darkBackgroundRef.current.classList.add('open');
+      homeRef.current.classList.add('open');
       setMenuOpen(true);
     } else {
       menuBtnRef.current.classList.remove('open');
@@ -39,6 +41,7 @@ function App() {
       menuBackgroundRef.current.classList.remove('open');
       headerBrandRef.current.classList.remove('open');
       darkBackgroundRef.current.classList.remove('open');
+      homeRef.current.classList.remove('open');
       setMenuOpen(false);
     }
   }
@@ -53,11 +56,10 @@ function App() {
         </div>
       </header>
 
-      <div className="dark-background" ref={darkBackgroundRef}></div>
-
       <section className="menu-background" ref={menuBackgroundRef}>
         <nav>
           <ul className="nav-links-ul" ref={navLinksRef}>
+            <li><NavLink to="/" id="home-link" className="nav-links" ref={homeRef} activeClassName="highlight" onClick={openCloseMenu}>#home</NavLink></li>
             <li><NavLink to="/portfolio" id="portfolio-link" className="nav-links" ref={portfolioRef} activeClassName="highlight" onClick={openCloseMenu}>#portfolio</NavLink></li>
             <li><NavLink to="/about" id="about-link" className="nav-links" ref={aboutRef} activeClassName="highlight" onClick={openCloseMenu}>#about</NavLink></li>
             <li><NavLink to="/skills" id="skills-link" className="nav-links" ref={skillsRef} activeClassName="highlight" onClick={openCloseMenu}>#skills</NavLink></li>
@@ -66,6 +68,8 @@ function App() {
           </ul>
         </nav>
       </section>
+
+      <div className="dark-background" ref={darkBackgroundRef}></div>
 
       <Switch>
         <Route exact path="/" render={(props) => <Home {...props} />} />
