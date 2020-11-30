@@ -65,9 +65,9 @@
 }
 
 #home-carousel-container article {
-  border: red 1px solid;
   height: calc(50vh - 9rem);
   width: 13rem;
+  padding-right: 2rem;
   border-radius: 15px;
 }
 
