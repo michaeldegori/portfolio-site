@@ -1,9 +1,7 @@
 #home-title {
-  display: flex;
-  justify-content: center;
-}
-#home-title-container {
-  height: calc(50vh - 50px);
+  height: calc(50vh - 3.75rem);
+  width: 18.2rem;
+  margin: 0 auto;
   display:flex;
   flex-direction: column;
   justify-content: center;
@@ -25,4 +23,76 @@
   margin-top: .75rem;
   font-size: 1.2rem;
   line-height: 1.8rem;
+}
+
+#home-portfolio {
+  display: flex;
+  justify-content: center;
+}
+
+#home-portfolio-container {
+  width: 18.2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#home-port-title-container {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+#home-portfolio h2{
+  display: inline-block;
+  font-family: 'Nunito', sans-serif;
+  font-size: 1.25rem;
+  font-weight: 800;
+}
+
+#home-portfolio h2:first-child {
+  color: white;
+}
+
+#home-portfolio h2:nth-child(2) {
+  color: #1159c0;
+}
+
+#home-carousel-container {
+  height: calc(50vh - 80px);
+  width: 100vw;
+  padding: 1.3rem 0 2rem;
+}
+
+#home-carousel-container article {
+  border: red 1px solid;
+  height: calc(50vh - 9rem);
+  width: 13rem;
+  border-radius: 15px;
+}
+
+#home-carousel-container a {
+  height: 100%;
+  width: 100%;
+}
+
+#dino-still {
+  background-image: url('../images/dino-game-still.png');
+  background-repeat: no-repeat;
+  background-size: 250%;
+  background-position: -180px -130px;
+}
+
+#rock-still {
+  background-image: url('../images/rock-site-still.png');
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position: center;
+}
+
+#default-still {
+  background-image: url('../images/project-default.jpeg');
+  background-repeat: no-repeat;
+  background-size: 200%;
+  background-position: center;
 }

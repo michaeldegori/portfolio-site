@@ -124,6 +124,7 @@ header {
   /* background-color: #111; */
   opacity: 1;
   position: fixed;
+  z-index: 2;
 }
 
 header .header-brand {
@@ -134,13 +135,31 @@ header .header-brand {
   display: inline-block;
   margin: 0 auto;
   text-align: left;
-  padding: 11px 0 11px 11px;
+  padding: 1rem 0 1rem 1rem;
   transition: all .5s ease-in-out;
+}
+
+.dark-background {
+  visibility: hidden;
+  position: fixed;
+  top: 0px;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: #111111;
+  z-index: 1;
+  opacity: 0;
+  transition: all .5s ease-in-out;
+}
+
+.dark-background.open {
+  visibility: visible;
+  opacity: .7;
 }
 
 .menu-background .nav-links-ul {
   font-family: 'Nunito', sans-serif;
-  font-size: 20px;
+  font-size: 1.25rem;
   font-weight: 800;
   height: 0;
   width: 100vw;
@@ -149,7 +168,6 @@ header .header-brand {
 }
 
 .menu-background .nav-links-ul.open {
-  font-size: 20px;
   height: 200px;
   transform: translateY(85px);
   transition: all .5s ease-in-out;
@@ -157,8 +175,8 @@ header .header-brand {
 
 .menu-background .nav-links {
   color: #FFF;
-  margin-right: 11px;
-  padding-right: 11px;
+  margin-right: 1rem;
+  padding-right: 1rem;
   line-height: 35px;
   display: flex;
   justify-content: flex-end;
@@ -186,6 +204,7 @@ header .header-brand {
   margin-bottom: 50px;
   background: linear-gradient( rgba(0,0,0,1) 0%, rgba(0,0,0,0.6) 85%, rgba(0,0,0,0.4) 90%, rgba(0,0,0,0.2) 95%, rgba(0,0,0,0) 100%);
   transition: all .5s ease-in-out;
+  z-index: 2;
 }
 
 .menu-background.open {
@@ -199,8 +218,8 @@ header .header-brand {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 57px;
-  height: 50px;
+  width: 4.7rem;
+  height: 3.75rem;
   cursor: pointer;
   transition: all .5s ease-in-out;
 }

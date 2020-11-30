@@ -1,9 +1,8 @@
 import '../styles/Home.css'
 import React from 'react';
-import Portfolio from './Portfolio.js';
-import About from './About.js';
-import Contact from './Contact.js';
-import { Link, Switch, Route } from 'react-router-dom';
+import dinoStill from '../images/dino-game-still.png'
+import rockStill from '../images/rock-site-still.png'
+import defaultStill from '../images/project-default.jpeg'
 
 
 
@@ -13,32 +12,29 @@ const Home = (props) => {
     <div className="home">
       <main>
         <section id="home-title">
-          <div id="home-title-container">
-            <h1>I create incredible experiences</h1>
-            <h3>Web Developer from MIA</h3>
-          </div>
-
+            <div id="home-title-container">
+              <h1>I create incredible<br />experiences</h1>
+              <h3>Web Developer from MIA</h3>
+            </div>
         </section>
 
         <section id="home-portfolio">
-          <h2>My Work</h2>
-          <h2>- View all work</h2>
-          <div id="home-carousel-container">
-            <article className="home-projects">
-              <a href="">
-                <img src="" alt="dinosaur platformer game" />
-              </a>
-            </article>
-            <article className="home-projects">
-              <a href="">
-                <img src="" alt="celebrity/influencer landing page" />
-              </a>
-            </article>
-            <article className="home-projects">
-              <a href="">
-                <img src="" alt="untitled project" />
-              </a>
-            </article>
+          <div id="home-portfolio-container">
+            <div id="home-port-title-container">
+              <h2>My Work</h2>
+              <h2>- View All Work</h2>
+            </div>
+            <div id="home-carousel-container">
+              <article id="dino-still" className="home-projects">
+                <a href=""></a>
+              </article>
+              <article id="rock-still" className="home-projects">
+                <a href=""></a>
+              </article>
+              <article id="default-still" className="home-projects">
+                <a href=""></a>
+              </article>
+            </div>
           </div>
         </section>
       </main>

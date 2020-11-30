@@ -23,6 +23,7 @@ function App() {
   const skillsRef = useRef()
   const contactRef = useRef()
   const resumeRef = useRef()
+  const darkBackgroundRef= useRef()
   
   const openCloseMenu = () => {
     if(!menuOpen) {
@@ -30,12 +31,14 @@ function App() {
       navLinksRef.current.classList.add('open');
       menuBackgroundRef.current.classList.add('open');
       headerBrandRef.current.classList.add('open');
+      darkBackgroundRef.current.classList.add('open');
       setMenuOpen(true);
     } else {
       menuBtnRef.current.classList.remove('open');
       navLinksRef.current.classList.remove('open');
       menuBackgroundRef.current.classList.remove('open');
       headerBrandRef.current.classList.remove('open');
+      darkBackgroundRef.current.classList.remove('open');
       setMenuOpen(false);
     }
   }
@@ -43,20 +46,22 @@ function App() {
   return (
     <div className="App">
       <header>
-        <Link to="/" className="header-brand" ref={headerBrandRef}>.michael(degori)</Link>
+        <Link to="/" className="header-brand" ref={headerBrandRef} onClick={openCloseMenu}>.michael(degori)</Link>
 
         <div className="menu-btn" ref={menuBtnRef} onClick={openCloseMenu}>
           <div className="menu-btn-burger"></div>
         </div>
       </header>
 
+      <div className="dark-background" ref={darkBackgroundRef}></div>
+
       <section className="menu-background" ref={menuBackgroundRef}>
         <nav>
           <ul className="nav-links-ul" ref={navLinksRef}>
-            <li><NavLink to="/portfolio" id="portfolio-link" className="nav-links" ref={portfolioRef} activeClassName="highlight">#portfolio</NavLink></li>
-            <li><NavLink to="/about" id="about-link" className="nav-links" ref={aboutRef} activeClassName="highlight">#about</NavLink></li>
-            <li><NavLink to="/skills" id="skills-link" className="nav-links" ref={skillsRef} activeClassName="highlight">#skills</NavLink></li>
-            <li><NavLink to="/contact" id="contact-link" className="nav-links" ref={contactRef} activeClassName="highlight">#contact</NavLink></li>
+            <li><NavLink to="/portfolio" id="portfolio-link" className="nav-links" ref={portfolioRef} activeClassName="highlight" onClick={openCloseMenu}>#portfolio</NavLink></li>
+            <li><NavLink to="/about" id="about-link" className="nav-links" ref={aboutRef} activeClassName="highlight" onClick={openCloseMenu}>#about</NavLink></li>
+            <li><NavLink to="/skills" id="skills-link" className="nav-links" ref={skillsRef} activeClassName="highlight" onClick={openCloseMenu}>#skills</NavLink></li>
+            <li><NavLink to="/contact" id="contact-link" className="nav-links" ref={contactRef} activeClassName="highlight" onClick={openCloseMenu}>#contact</NavLink></li>
             <li><Link to="/resume" id="resume-link" className="nav-links" ref={resumeRef}>#resume</Link></li>
           </ul>
         </nav>
