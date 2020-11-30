@@ -74,8 +74,8 @@
 }
 
 #home-carousel-container article {
-  height: 16rem;
-  width: 12rem;
+  height: 100%;
+  width: 50%;
   border-radius: 15px;
   display: inline-block;
 }
@@ -97,15 +97,15 @@
 #rock-still {
   background-image: url('../images/rock-site-still.png');
   background-repeat: no-repeat;
-  background-size: 100%;
-  background-position: center;
+  background-size: cover;
+  background-position: top;
   margin-right: 2rem;
 }
 
 #default-still {
   background-image: url('../images/project-default.jpeg');
   background-repeat: no-repeat;
-  background-size: 200%;
+  background-size: cover;
   background-position: center;
-  margin-right: 2.5rem;
+  margin-right: 10%;
 }
