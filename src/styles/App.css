@@ -120,12 +120,13 @@ html {
 
 header {
   width: 100%;
-  height: 3.75rem;
+  height: 3.7rem;
   opacity: 1;
   position: fixed;
   z-index: 3;
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 
 header .header-brand {
@@ -155,7 +156,7 @@ header .header-brand {
 
 .dark-background.open {
   visibility: visible;
-  opacity: .4;
+  opacity: .5;
 }
 
 .menu-background .nav-links-ul {
@@ -178,7 +179,7 @@ header .header-brand {
   color: #FFF;
   margin-right: 1rem;
   padding-right: 1rem;
-  line-height: 35px;
+  line-height: 2rem;
   display: flex;
   justify-content: flex-end;
 }
@@ -207,6 +208,7 @@ header .header-brand {
   height: 0;
   width: 100vw;
   margin-bottom: 50px;
+  /* background: #aaa; */
   background: linear-gradient( rgba(0,0,0,1) 0%, rgba(0,0,0,0.6) 85%, rgba(0,0,0,0.4) 90%, rgba(0,0,0,0.2) 95%, rgba(0,0,0,0) 100%);
   transition: all .5s ease-in-out;
   position: relative;
@@ -214,7 +216,7 @@ header .header-brand {
 }
 
 .menu-background.open {
-  height: 375px;
+  height: 20rem;
   transition: all .5s ease-in-out;
 }
 
@@ -231,7 +233,7 @@ header .header-brand {
 
 .menu-btn-burger {
   width: 2rem;
-  height: 4.5px;
+  height: .25rem;
   background-color: #FFF;
   border-radius: 5px;
   transition: all .5s ease-in-out;
@@ -249,12 +251,12 @@ header .header-brand {
 
 .menu-btn-burger::before {
   width: 1.5rem;
-  transform: translateY(-.625rem) translateX(.5rem);
+  transform: translateY(-.6rem) translateX(.5rem);
 }
 
 .menu-btn-burger::after {
   width: 2rem;
-  transform: translateY(.625rem);
+  transform: translateY(.6rem);
 }
 
 /* BURGER MENU ANIMATION */
@@ -268,12 +270,12 @@ header .header-brand {
 .menu-btn.open .menu-btn-burger::before {
   background-color: #FFDE0A;
   width: 2rem;
-  transform: rotate(45deg) translate(-1.5rem, 1.5rem)
+  transform: rotate(45deg) translate(-1.3rem, 1.3rem)
 }
 
 .menu-btn.open .menu-btn-burger::after {
   background-color: #FFDE0A;
-  transform: rotate(-45deg) translate(-1.5rem, -1.5rem)
+  transform: rotate(-45deg) translate(-1.3rem, -1.3rem)
 }
 
 footer {
@@ -281,7 +283,7 @@ footer {
   font-family: 'Nunito', sans-serif;
   left: 0;
   bottom: 0;
-  height: 4.5rem;
+  height: 3.7rem;
   width: 100%;
   background-color: #1159c0;
   display: flex;
@@ -290,19 +292,19 @@ footer {
 }
 
 footer h4 {
-  font-size: 1rem;
-  font-weight: 500;
+  font-size: .9rem;
+  font-weight: 400;
   color: white;
 }
 
 footer img {
-  width: 33px;
+  width: 1.8rem;
   padding-bottom: 5px;
 }
 
 .footer-icon-container {
   width: 25vw;
-  height: 4.5rem;
+  height: 3.7rem;
   background-color: #1159c0;
   display: flex;
   align-items: center;

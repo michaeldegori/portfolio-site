@@ -82,7 +82,8 @@ function App() {
         </nav>
       </section>
 
-      <div className="dark-background" ref={darkBackgroundRef}></div>
+      <div className="background"></div>
+      <div className="dark-background" ref={darkBackgroundRef} onClick={openCloseMenu}></div>
 
       <Switch>
         <Route exact path="/" render={(props) => <Home {...props} />} />
