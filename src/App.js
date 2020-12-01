@@ -10,6 +10,7 @@ import aboutGlyph from './images/about-glyph.png'
 import portfolioGlyph from './images/projects-glyph.png'
 import contactGlyph from './images/contact-glyph.png'
 import skillsGlyph from './images/skills-glyph.png'
+import background from './images/background.jpg'
 
 function App() {
 
@@ -82,7 +83,9 @@ function App() {
         </nav>
       </section>
 
-      <div className="background"></div>
+      <div className="background-wrapper">
+        <img src={background} alt="computer background"/>
+      </div>
       <div className="dark-background" ref={darkBackgroundRef} onClick={openCloseMenu}></div>
 
       <Switch>
