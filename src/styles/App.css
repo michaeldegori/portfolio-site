@@ -121,28 +121,29 @@ html {
 header {
   width: 100%;
   height: 3.75rem;
-  /* background-color: #111; */
   opacity: 1;
   position: fixed;
   z-index: 3;
+  display: flex;
+  justify-content: space-between;
 }
 
 header .header-brand {
   font-family: 'Nunito', sans-serif;
-  font-size: 1.5rem;
+  font-size: 3.4vmax;
   font-weight: 800;
   color: #fff;
-  display: inline-block;
-  margin: 0 auto;
+  /* display: inline-block; */
+  margin: auto 0;
   text-align: left;
-  padding: 1rem 0 1rem 1rem;
+  padding-left: 1rem;
   transition: all .5s ease-in-out;
 }
 
 .dark-background {
   visibility: hidden;
   position: fixed;
-  top: 0px;
+  top: 0;
   left: 0;
   height: 100%;
   width: 100%;
@@ -213,18 +214,17 @@ header .header-brand {
 }
 
 .menu-background.open {
-  height: 300px;
+  height: 375px;
   transition: all .5s ease-in-out;
 }
 
 .menu-btn {
-  position: relative;
-  float: right;
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 4.7rem;
+  width: 2rem;
   height: 3.75rem;
+  margin-right: 1rem;
   cursor: pointer;
   transition: all .5s ease-in-out;
 }
@@ -278,9 +278,10 @@ header .header-brand {
 
 footer {
   position: fixed;
+  font-family: 'Nunito', sans-serif;
   left: 0;
   bottom: 0;
-  height: 80px;
+  height: 4.5rem;
   width: 100%;
   background-color: #1159c0;
   display: flex;
@@ -301,7 +302,7 @@ footer img {
 
 .footer-icon-container {
   width: 25vw;
-  height: 5rem;
+  height: 4.5rem;
   background-color: #1159c0;
   display: flex;
   align-items: center;

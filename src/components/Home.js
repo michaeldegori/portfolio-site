@@ -14,7 +14,7 @@ const Home = (props) => {
       <main>
         <section id="home-title">
             <div id="home-title-container">
-              <h1>I build amazing<br />experiences</h1>
+              <h1>I build<br />amazing<br />experiences</h1>
               <h3>Web Developer from MIA</h3>
             </div>
         </section>

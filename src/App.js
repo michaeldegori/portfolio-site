@@ -23,11 +23,11 @@ function App() {
   const skillsRef = useRef()
   const contactRef = useRef()
   const resumeRef = useRef()
-  const darkBackgroundRef= useRef()
+  const darkBackgroundRef = useRef()
   const homeRef = useRef()
-  
+
   const openCloseMenu = () => {
-    if(!menuOpen) {
+    if (!menuOpen) {
       menuBtnRef.current.classList.add('open');
       navLinksRef.current.classList.add('open');
       menuBackgroundRef.current.classList.add('open');
@@ -46,12 +46,25 @@ function App() {
     }
   }
 
+  const scrollToTop = () => {
+    if (menuOpen) {
+      window.scrollTo({
+        top: 0,
+        behavior: "smooth"
+      });
+    }
+  }
+
   return (
     <div className="App">
       <header>
         <Link to="/" className="header-brand" ref={headerBrandRef}>.michael(degori)</Link>
 
-        <div className="menu-btn" ref={menuBtnRef} onClick={openCloseMenu}>
+        <div className="menu-btn" ref={menuBtnRef}
+          onClick={() => {
+            openCloseMenu();
+            scrollToTop();
+          }}>
           <div className="menu-btn-burger"></div>
         </div>
       </header>
