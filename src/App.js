@@ -94,11 +94,13 @@ function App() {
       <div className="push-content" ref={pushContentRef}></div>
 
       <Switch>
-        <Route exact path="/" render={(props) => <Home {...props} />} />
-        <Route exact path="/portfolio" render={(props) => <Portfolio {...props} />} />
-        <Route exact path="/about" render={(props) => <About {...props} />} />
-        <Route exact path="/skills" render={(props) => <Skills {...props} />} />
-        <Route exact path="/contact" render={(props) => <Contact {...props} />} />
+        <main>
+          <Route exact path="/" render={(props) => <Home {...props} />} />
+          <Route exact path="/portfolio" render={(props) => <Portfolio {...props} />} />
+          <Route exact path="/about" render={(props) => <About {...props} />} />
+          <Route exact path="/skills" render={(props) => <Skills {...props} />} />
+          <Route exact path="/contact" render={(props) => <Contact {...props} />} />
+        </main>
       </Switch>
 
       <footer>
