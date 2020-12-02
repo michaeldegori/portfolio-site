@@ -26,6 +26,7 @@ function App() {
   const resumeRef = useRef()
   const darkBackgroundRef = useRef()
   const homeRef = useRef()
+  const pushContentRef = useRef()
 
   const openCloseMenu = () => {
     if (!menuOpen) {
@@ -35,6 +36,7 @@ function App() {
       headerBrandRef.current.classList.add('open');
       darkBackgroundRef.current.classList.add('open');
       homeRef.current.classList.add('open');
+      pushContentRef.current.classList.add('open');
       setMenuOpen(true);
     } else {
       menuBtnRef.current.classList.remove('open');
@@ -43,6 +45,7 @@ function App() {
       headerBrandRef.current.classList.remove('open');
       darkBackgroundRef.current.classList.remove('open');
       homeRef.current.classList.remove('open');
+      pushContentRef.current.classList.remove('open');
       setMenuOpen(false);
     }
   }
@@ -84,9 +87,11 @@ function App() {
       </section>
 
       <div className="background-wrapper">
-        <img src={background} alt="computer background"/>
+        <img src={background} alt="computer background" />
       </div>
       <div className="dark-background" ref={darkBackgroundRef} onClick={openCloseMenu}></div>
+
+      <div className="push-content" ref={pushContentRef}></div>
 
       <Switch>
         <Route exact path="/" render={(props) => <Home {...props} />} />

@@ -139,6 +139,17 @@ header {
   align-items: center;
 }
 
+.push-content {
+  position: static;
+  top: 3.7rem;
+  height: 0;
+  transition: all .5s ease-in-out;
+}
+
+.push-content.open {
+  height: 6.7rem;
+}
+
 header .header-brand {
   font-family: 'Nunito', sans-serif;
   font-size: 3.4vmax;
@@ -165,7 +176,7 @@ header .header-brand {
 
 .dark-background.open {
   visibility: visible;
-  opacity: .5;
+  opacity: .4;
 }
 
 .menu-background .nav-links-ul {
@@ -219,7 +230,7 @@ header .header-brand {
   width: 100vw;
   background: linear-gradient( rgba(0,0,0,1) 0%, rgba(0,0,0,0.6) 85%, rgba(0,0,0,0.4) 90%, rgba(0,0,0,0.2) 95%, rgba(0,0,0,0) 100%);
   transition: all .5s ease-in-out;
-  position: relative;
+  position: fixed;
   z-index: 2;
 }
 
@@ -236,6 +247,7 @@ header .header-brand {
   height: 3.75rem;
   margin-right: 1rem;
   cursor: pointer;
+  z-index: 1;
   transition: all .5s ease-in-out;
 }
 
