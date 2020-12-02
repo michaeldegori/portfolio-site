@@ -7,6 +7,10 @@
   justify-content: center;
 }
 
+#home-title.open {
+  margin: 8.75rem 10% 0;
+}
+
 #home-title h1 {
   font-family: 'Nunito', sans-serif;
   font-weight: 700;
@@ -35,9 +39,8 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  /* margin-top: 1rem; */
-  margin-bottom: 10vh;
-  height: 50vh;
+  margin-bottom: 10vmax;
+  height: 45vmax;
 }
 
 #home-port-title-container {
@@ -75,14 +78,9 @@
 
 #home-carousel-container article {
   height: 100%;
-  width: 50%;
+  width: 55vmin;
   border-radius: 15px;
   display: inline-block;
-}
-
-#home-carousel-container a {
-  height: 100%;
-  width: 100%;
 }
 
 #dino-still {

@@ -1,10 +1,6 @@
 import '../styles/Home.css'
 import React, { useRef, useEffect } from 'react';
 import { Link } from 'react-router-dom'
-import dinoStill from '../images/dino-game-still.png'
-import rockStill from '../images/rock-site-still.png'
-import defaultStill from '../images/project-default.jpeg'
-
 
 
 
@@ -12,12 +8,12 @@ const Home = (props) => {
 
   const lastTileRef = useRef()
 
-  useEffect(() => {
-    lastTileRef.current.scrollIntoView({
-      behavior: "smooth",
-      // block: "start",
-    })
-  }, [])
+  // useEffect(() => {
+  //   lastTileRef.current.scrollIntoView({
+  //     behavior: "smooth",
+  //     // block: "start",
+  //   })
+  // }, [])
 
 
   return (
@@ -37,10 +33,10 @@ const Home = (props) => {
               <h2 id="view-work"><Link to='/portfolio'>- View All Work</Link></h2>
             </div>
             <div id="home-carousel-container">
-              <a href="https://the-ironhack-breakfast-club.github.io/dino-game/">
+              <a href="https://the-ironhack-breakfast-club.github.io/dino-game/" target="_blank">
                 <article id="dino-still" className="home-projects"></article>
               </a>
-              <a href="https://www.toningwithteremanatequila.netlify.app/">
+              <a href="https://toningwithteremanatequila.netlify.app/" target="_blank">
                 <article id="rock-still" className="home-projects"></article>
               </a>
               <a href="#">

@@ -47,14 +47,14 @@ function App() {
     }
   }
 
-  const scrollToTop = () => {
-    if (menuOpen) {
-      window.scrollTo({
-        top: 0,
-        behavior: "smooth"
-      });
-    }
-  }
+  // const scrollToTop = () => {
+  //   if (menuOpen) {
+  //     window.scrollTo({
+  //       top: 0,
+  //       behavior: "smooth"
+  //     });
+  //   }
+  // }
 
   return (
     <div className="App">
@@ -64,7 +64,7 @@ function App() {
         <div className="menu-btn" ref={menuBtnRef}
           onClick={() => {
             openCloseMenu();
-            scrollToTop();
+            // scrollToTop();
           }}>
           <div className="menu-btn-burger"></div>
         </div>
