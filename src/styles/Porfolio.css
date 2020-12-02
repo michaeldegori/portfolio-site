@@ -92,17 +92,17 @@
 
 #dino-wrapper {
   height: 50vmin;
-  width: 70vmin;
+  width: 80vmin;
   border-radius: 15px;
   background-image: url('../images/dino-game-still.png');
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: top;
+  background-position: 0 10%;
 }
 
 #rock-wrapper {
   height: 50vmin;
-  width: 70vmin;
+  width: 80vmin;
   border-radius: 15px;
   background-image: url('../images/rock-site-still.png');
   background-repeat: no-repeat;
@@ -112,7 +112,7 @@
 
 #default-wrapper {
   height: 50vmin;
-  width: 70vmin;
+  width: 80vmin;
   border-radius: 15px;
   background-image: url('../images/project-default.jpeg');
   background-repeat: no-repeat;
