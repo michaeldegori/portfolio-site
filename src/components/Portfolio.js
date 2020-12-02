@@ -10,19 +10,18 @@ const Portfolio = () => {
       <main>
         <section id="portfolio-title">
           <div id="portfolio-title-container">
-            <h1>Websites and Dinos and More, Oh My!</h1>
+            <h1>My Projects</h1>
             <h3>Projects created at Ironhack</h3>
           </div>
         </section>
 
         <section id="portfolio-section">
-          <div id="portfolio-container">
             <div id="portfolio-carousel-container">
               <div className="projects">
                 <div className="projects-container">
                   <h2>Dino Platformer</h2>
                   <div id="dino-wrapper"></div>
-                  <p>Born out of a love for classic Mario-style platformers, my team was on a mission to create a fun homage to the Nintendo Classic. The mechanics were created using no external libraries or game engines, and the project was primarily coded using Canvas.</p>
+                  <p>Born out of a love for classic Mario-style platformers, my team was on a mission to create a fun homage to the Nintendo Classic. The mechanics, visuals and animations were created using no external libraries or game engines, and the project was primarily coded using Canvas.</p>
                   <button id="dino-link">Check me out!</button>
                 </div>
               </div>
@@ -34,7 +33,7 @@ const Portfolio = () => {
                   <button id="rock-link">Check me out!</button>
                 </div>
               </div>
-              <div className="projects">
+              <div className="projects default-project">
                 <div className="projects-container">
                   <h2>Unnamed Project</h2>
                   <div id="default-wrapper"></div>
@@ -43,7 +42,6 @@ const Portfolio = () => {
                 </div>
               </div>
             </div>
-          </div>
         </section>
       </main>
     </div>
