@@ -1,0 +1,121 @@
+#portfolio-title {
+  height: 30vmax;
+  width: 80%;
+  margin: 3.75rem 10% 0;
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+#portfolio-title h1 {
+  font-family: 'Nunito', sans-serif;
+  font-weight: 700;
+  color: white;
+  font-size: 4.8vmax;
+  line-height: 5.5vmax;
+}
+
+#portfolio-title h3 {
+  font-family: 'Nunito', sans-serif;
+  font-weight: 500;
+  display: inline-block;
+  color: #FFDE0A;
+  font-size: 2.5vmax;
+  line-height: 4.8vmax;
+}
+
+#portfolio-section {
+  text-align: center;
+}
+
+#portfolio-section h2{
+  font-family: 'Nunito', sans-serif;
+  color: #3087FF;
+  font-size: 2rem;
+  font-weight: 800;
+  margin-bottom: 1.5vmax;
+}
+
+#portfolio-carousel-container {
+  width: 100%;
+  overflow-x: auto;
+  overflow-y: hidden;
+  white-space: nowrap;
+  scroll-snap-type: x mandatory;
+}
+
+#portfolio-carousel-container::-webkit-scrollbar {
+  display: none;
+}
+
+.projects {
+  width: 90vmin;
+  height: 35rem;
+  background-color: rgba(75, 75, 75, 0.603);
+  margin: 0 5vmin 10vmax;
+  border-radius: 15px;
+  display: inline-block;
+  white-space: normal;
+  scroll-snap-align: center;
+}
+
+.projects-container {
+  height: 35rem;
+  padding : 1rem 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.projects p {
+  font-family: 'Nunito', sans-serif;
+  color: white;
+  font-size: 1.2rem;
+  margin: 1.5vmax auto 0;
+  white-space: normal;
+  width: 80vmin;
+}
+
+.projects button {
+  width: 55vmin;
+  font-family: 'Nunito', sans-serif;
+  font-size: 1.3rem;
+  font-weight: 900;
+  color: black;
+  background-color: #FFDE0A;
+  padding: .6rem .8rem;
+  border: none;
+  border-radius: 25px;
+  margin-top: 1.5vmax;
+}
+
+#dino-wrapper {
+  height: 50vmin;
+  width: 70vmin;
+  border-radius: 15px;
+  background-image: url('../images/dino-game-still.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top;
+}
+
+#rock-wrapper {
+  height: 50vmin;
+  width: 70vmin;
+  border-radius: 15px;
+  background-image: url('../images/rock-site-still.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+#default-wrapper {
+  height: 50vmin;
+  width: 70vmin;
+  border-radius: 15px;
+  background-image: url('../images/project-default.jpeg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top;
+}

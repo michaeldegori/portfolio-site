@@ -1,5 +1,5 @@
 #home-title {
-  height: 35vmax;
+  height: 32vmax;
   width: 80%;
   margin: 3.75rem 10% 0;
   display:flex;
@@ -7,16 +7,12 @@
   justify-content: center;
 }
 
-#home-title.open {
-  margin: 8.75rem 10% 0;
-}
-
 #home-title h1 {
   font-family: 'Nunito', sans-serif;
   font-weight: 700;
   color: white;
-  font-size: 6vmax;
-  line-height: 7vmax;
+  font-size: 5.5vmax;
+  line-height: 6vmax;
 }
 
 #home-title h3 {
@@ -25,7 +21,7 @@
   display: inline-block;
   color: #FFDE0A;
   font-size: 2.5vmax;
-  line-height: 7vmax;
+  line-height: 5.5vmax;
 }
 
 #home-portfolio {
@@ -60,11 +56,11 @@
 }
 
 #view-work a {
-  color: #1159c0;
+  color: #3087FF;
 }
 
 #home-carousel-container {
-  height: 40vmax;
+  height: 35vmax;
   width: 100%;
   padding-top: 3vmax;
   overflow-x: auto;
@@ -78,7 +74,7 @@
 
 #home-carousel-container article {
   height: 100%;
-  width: 55vmin;
+  width: 45vmin;
   border-radius: 15px;
   display: inline-block;
 }
