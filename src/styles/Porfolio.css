@@ -44,7 +44,6 @@
   scroll-snap-type: x mandatory;
   display: flex;
   align-items: center;
-  margin-right: 5vmin;
 }
 
 #portfolio-carousel-container::-webkit-scrollbar {
