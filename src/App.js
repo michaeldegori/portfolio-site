@@ -62,7 +62,7 @@ function App() {
   return (
     <div className="App">
       <header>
-        <Link to="/" className="header-brand" ref={headerBrandRef}>.michael(degori)</Link>
+        <Link to="/home" className="header-brand" ref={headerBrandRef}>.michael(degori)</Link>
 
         <div className="menu-btn" ref={menuBtnRef}
           onClick={() => {
@@ -76,7 +76,7 @@ function App() {
       <section className="menu-background" ref={menuBackgroundRef}>
         <nav>
           <ul className="nav-links-ul" ref={navLinksRef}>
-            <li><NavLink to="/" id="home-link" className="nav-links" ref={homeRef} activeClassName="highlight" onClick={openCloseMenu}>#home</NavLink></li>
+            <li><NavLink to="/home" id="home-link" className="nav-links" ref={homeRef} activeClassName="highlight" onClick={openCloseMenu}>#home</NavLink></li>
             <li><NavLink to="/portfolio" id="portfolio-link" className="nav-links" ref={portfolioRef} activeClassName="highlight" onClick={openCloseMenu}>#portfolio</NavLink></li>
             <li><NavLink to="/about" id="about-link" className="nav-links" ref={aboutRef} activeClassName="highlight" onClick={openCloseMenu}>#about</NavLink></li>
             <li><NavLink to="/skills" id="skills-link" className="nav-links" ref={skillsRef} activeClassName="highlight" onClick={openCloseMenu}>#skills</NavLink></li>
@@ -95,7 +95,7 @@ function App() {
 
       <Switch>
         <main>
-          <Route exact path="/" render={(props) => <Home {...props} />} />
+          <Route exact path="/home" render={(props) => <Home {...props} />} />
           <Route exact path="/portfolio" render={(props) => <Portfolio {...props} />} />
           <Route exact path="/about" render={(props) => <About {...props} />} />
           <Route exact path="/skills" render={(props) => <Skills {...props} />} />
