@@ -5,7 +5,7 @@ import Portfolio from './components/Portfolio.js';
 import About from './components/About.js';
 import Skills from './components/Skills.js'
 import Contact from './components/Contact.js';
-import { NavLink, Link, Switch, Route } from 'react-router-dom';
+import { NavLink, Link, Switch, Redirect, Route } from 'react-router-dom';
 import aboutGlyph from './images/about-glyph.png'
 import portfolioGlyph from './images/projects-glyph.png'
 import contactGlyph from './images/contact-glyph.png'
@@ -95,6 +95,9 @@ function App() {
 
       <Switch>
         <main>
+          <Route exact path="/">
+            <Redirect to="/home" />
+          </Route>
           <Route exact path="/home" render={(props) => <Home {...props} />} />
           <Route exact path="/portfolio" render={(props) => <Portfolio {...props} />} />
           <Route exact path="/about" render={(props) => <About {...props} />} />
