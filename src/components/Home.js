@@ -50,7 +50,7 @@ const Home = (props) => {
             </a>
             <a href="https://smokymountaingetaways.netlify.app/home">
               <article
-                id="smoky-mountain-getaways-still"
+                id="smg-still"
                 className="home-projects"
                 ref={lastTileRef}
               ></article>
