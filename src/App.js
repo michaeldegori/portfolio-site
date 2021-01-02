@@ -141,14 +141,9 @@ function App() {
               </NavLink>
             </li>
             <li>
-              <Link
-                to="/resume"
-                id="resume-link"
-                className="nav-links"
-                ref={resumeRef}
-              >
+              <a href="../public/michael-resume.pdf" download>
                 #resume
-              </Link>
+              </a>
             </li>
           </ul>
         </nav>
