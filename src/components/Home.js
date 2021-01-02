@@ -48,7 +48,7 @@ const Home = (props) => {
             >
               <article id="rock-still" className="home-projects"></article>
             </a>
-            <a href="https://smokymountaingetaways.netlify.app/home">
+            <a href="https://smokymountaingetaways.netlify.app/">
               <article
                 id="smg-still"
                 className="home-projects"
