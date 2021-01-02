@@ -53,14 +53,13 @@ const Portfolio = () => {
           </div>
           <div className="projects smg-project">
             <div className="projects-container">
-              <h2>Unnamed Project</h2>
+              <h2>Direct Property Booking Site</h2>
               <div id="smg-wrapper"></div>
               <p>
-                Shiver me timbers piracy snow Letter of Marque wench hornswaggle
-                Nelsons folly Yellow Jack lanyard gunwalls. Skysail hempen
-                halter careen gibbet execution dock plunder fore Pieces of Eight
-                boom fathom. Keelhaul reef come about Jack Ketch yardarm
-                man-of-war keel smartly weigh anchor mizzenmast.
+                Geared toward providing a more convenient and cost-effective way
+                for repeat guests to book a trip in one of my properties, this
+                site included many challenges to overcome. The site was created
+                using React, Bootstrap, Node.js, Express and MongoDB.
               </p>
               <a href="https://smokymountaingetaways.netlify.app/">
                 <button id="smg-link">Check me out!</button>
