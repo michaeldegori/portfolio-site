@@ -188,6 +188,8 @@ function App() {
         </main>
       </Switch>
 
+      <div className="" style={{ height: '60px' }}></div>
+
       <footer>
         <div className="footer-icon-container">
           <Link to="/portfolio">
