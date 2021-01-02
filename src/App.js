@@ -142,6 +142,7 @@ function App() {
             <li>
               <a
                 href="https://res.cloudinary.com/michaeldegori/image/upload/v1609586231/Michael_s_Resume_uucdse.pdf"
+                className="nav-links"
                 download
               >
                 #resume
